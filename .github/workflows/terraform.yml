@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./environments/dev
+        working-directory: ./Environments/DEV
 
     steps:
 
@@ -74,7 +74,7 @@ jobs:
       # 4. Terraform Init
       - name: Terraform Init
         run: terraform init
-        env:
+        #env:
           #TF_VAR_vm_password: ${{ secrets.TF_VAR_VM_PASSWORD }}
 
       # 6. Terraform Validate
